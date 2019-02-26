@@ -29,5 +29,9 @@ module GrapeTodo
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+    # Don't generate asset files
+    config.generators.stylesheets = nil
+    config.generators.javascripts = nil
   end
 end
