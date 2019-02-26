@@ -57,6 +57,8 @@ module Todo
       error! "Something went wrong", 500
     end
 
+    mount Tasks
+
     add_swagger_documentation doc_version: "1.0.0",
       info: {
         title: "Grape Todo",
