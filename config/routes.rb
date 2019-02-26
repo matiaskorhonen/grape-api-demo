@@ -1,3 +1,7 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  mount Todo::API => "/"
+  # Mount the swagger engine in development etc…
+  if defined?(GrapeSwaggerRails)
+    mount GrapeSwaggerRails::Engine => "/swagger"
+  end
 end
