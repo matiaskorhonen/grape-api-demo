@@ -169,7 +169,7 @@ class TodoApp extends React.Component {
       <Container>
         <Row>
           <Col sm="12">
-            <Navbar color="light" light expand="md">
+            <Navbar color="light" light expand="md" style={{ marginBottom: "2em" }}>
               <NavbarBrand href="/">Todo</NavbarBrand>
               <Nav className="ml-auto" navbar>
                 <NavItem>
@@ -183,14 +183,13 @@ class TodoApp extends React.Component {
         </Row>
         <Row>
           <Col sm="12">
-            <h1>Grape Todo</h1>
             {notice && <Alert color="info">{notice}</Alert>}
             {alert && <Alert color="warning">{alert}</Alert>}
           </Col>
         </Row>
         <Row>
           <Col sm="12">
-            <Form onSubmit={this.handleNewTask} autoComplete="off">
+            <Form onSubmit={this.handleNewTask} autoComplete="off" style={{ marginBottom: "2em" }}>
               <FormGroup>
                 <Label for="newTask">Task</Label>
                 <Input
